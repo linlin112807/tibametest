@@ -1,0 +1,39 @@
+1. SessionFactory => Session
+	openSession()
+	getCurrentSession()
+
+
+2. Session => Transaction
+
+Session  (openSession())
+	trx1 (session.beginTransaction())
+
+	trx1.commmit() / trx1.rolback()
+
+	trx2 (session.beginTransaction())
+
+	trx2.commmit() / trx2.rolback()
+
+	trx3 (session.beginTransaction())
+
+	trx3.commmit() / trx3.rolback()
+Session (close())
+
+
+Session  (getCurrentSession())
+	trx (session.beginTransaction())
+
+	trx.commmit() / trx.rolback()
+Session (close())
+
+=========================================
+使用Framework的相關程式設計步驟
+
+環境設定
+1. 產生Maven專案
+2. 在專案中加入相關函式庫：修改pom.xml的<dependencies>
+3. 產生主要組態設定檔
+
+程式設計
+
+

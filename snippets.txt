@@ -1,0 +1,12 @@
+mvn  install:install-file
+      -Dpackaging=jar
+      -DgroupId=com.oracle.jdbc
+      -DartifactId=ojdbc6
+      -Dversion=11.2.0.4
+      -Dfile=C:\......\ojdbc6.jar
+
+https://1drv.ms/f/s!ArHzAjj-x-JF0GeKs6ShjL3nWL0F
+
+
+檢查是否有下載到jar檔(路徑)
+C:\Users\User\.m2\repository\javax\servlet\jstl\1.2
